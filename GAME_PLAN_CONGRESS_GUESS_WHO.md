@@ -158,24 +158,25 @@ Inspired by Wordle, players guess which Congress member matches the clues.
 | Member search/autocomplete | P0 | S |
 | Guess validation & hints | P0 | M |
 | Results sharing (text grid) | P0 | S |
-| Streak tracking (localStorage) | P1 | S |
+| Streak tracking (persistent for logged-in users, localStorage for guests) | P1 | S |
 | Mobile-responsive design | P0 | M |
 | Basic stats (games played, win %) | P1 | S |
 
 ### Out of Scope (Post-MVP)
 
-- User accounts (use localStorage initially)
 - Leaderboards
 - Multiplayer
 - Historical Congress members
 - Achievements/badges
-- Social login
+
+> **Note:** User authentication already exists on Congress.wiki and will be leveraged for persistent game state.
 
 ### Technical Requirements
 
 - **Frontend:** Next.js (existing stack)
 - **Data:** Existing Congress member database
-- **State:** localStorage for MVP, database for V1.1
+- **Auth:** Existing user authentication system
+- **State:** Database for logged-in users, localStorage fallback for guests
 - **Sharing:** Web Share API + fallback copy
 - **Analytics:** Track completions, shares, streaks
 
@@ -335,8 +336,8 @@ congress.wiki/game
 |------|--------|
 | Practice mode | 3 days |
 | Difficulty settings | 2 days |
-| User accounts (optional) | 5 days |
 | Leaderboards | 3 days |
+| Achievements/badges | 3 days |
 
 ### Phase 3: iOS App (Optional, 4 weeks)
 
