@@ -86,15 +86,12 @@ This audit reviews all 252 GitHub issues for the Congress.wiki roadmap repositor
 
 ### 3. Issues Missing Required Labels
 
-**~45 issues lack priority labels** including:
-- #224-219: YouTube upload backlog tasks
-- #213: Congress.gov backfill repo
-- #204-168: Various features and data collection tasks
+**Only 1 open issue lacks priority labels:**
+- #252: Adopt BullMQ for Collector job orchestration
 
-**Recommendation:** Conduct a labeling sprint to ensure all issues have:
-- `priority:High/Medium/Low`
-- `effort:XS/S/M/L/XL`
-- Component label (Collector, Infrastructure, Mobile, etc.)
+**Note:** The backlog is well-labeled with priority tags. Most issues have appropriate `priority:High/Medium/Low` and `effort:XS/S/M/L/XL` labels.
+
+**Recommendation:** Add `priority:High` to #252 (significant infrastructure improvement)
 
 ---
 
@@ -186,9 +183,12 @@ This audit reviews all 252 GitHub issues for the Congress.wiki roadmap repositor
 
 ### Immediate Actions (This Week)
 
-1. **Close stale V1/V2 icons requests** - If icons haven't been needed in 2+ years, they likely never will be
-2. **Convert follow requests (#77-79)** to sub-issues under Epic #249
-3. **Add missing priority/effort labels** to the ~45 unlabeled issues
+> **Automation Available:** Run `./scripts/immediate-actions.sh` to execute these automatically.
+> Requires: `GITHUB_TOKEN=your_token` or `USE_GH_CLI=1` after `gh auth login`
+
+1. **Close stale V1/V2 icons requests** - 14 SVG icons from Feb 2022 (#55, 56, 58, 60-67, 69, 73, 74)
+2. **Link follow requests (#77-79, #101)** to Epic #249 with cross-references
+3. **Add priority:High label to #252** (BullMQ adoption - only issue missing priority)
 
 ### Short-Term Actions (This Month)
 
@@ -208,12 +208,12 @@ This audit reviews all 252 GitHub issues for the Congress.wiki roadmap repositor
 
 | Category | Score | Notes |
 |----------|-------|-------|
-| Issue Labeling | 6/10 | Many missing priority labels |
+| Issue Labeling | 8/10 | Well-labeled; only #252 missing priority |
 | Milestone Organization | 5/10 | V2/V3 stalled; many unassigned |
 | Duplicate Management | 4/10 | Multiple overlapping issues |
 | Epic Structure | 7/10 | New epics (#249-251) are good |
 | Issue Freshness | 5/10 | Many 2+ year old issues |
-| **Overall** | **5.4/10** | Needs grooming attention |
+| **Overall** | **5.8/10** | Needs grooming attention |
 
 ---
 
