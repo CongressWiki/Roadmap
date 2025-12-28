@@ -238,14 +238,33 @@ Based on existing V5 backlog and strategic value:
 3. **Complete V5 Bug Sprint** - Polish before new features
 
 ### Should Do (Q1 Stretch)
-4. **"My Congress" Personalized Homepage** - Retention driver
-5. **Bill Impact Explainer** - AI differentiation
-6. **Financial Disclosure UI** - High interest, data in progress
+4. **"My Congress" Personalized Homepage** (#260) - Retention driver
+5. **Bill Impact Explainer** (#259) - AI differentiation
+6. **Financial Disclosure UI** (#263) - High interest, data in progress
 
 ### Plan For (Q2)
-7. **Representation Score** - Core differentiator
-8. **Voting Comparison Tool** - Election prep
-9. **Civic Engagement Gamification** - Retention
+7. **Representation Score** (#258) - Core differentiator
+8. **Voting Comparison Tool** (#261) - Election prep
+9. **Civic Engagement Gamification** (#264) - Retention
+
+---
+
+## GitHub Issues Created
+
+| Issue | Title | Priority | Effort | Milestone |
+|-------|-------|----------|--------|-----------|
+| #258 | Representation Score Dashboard | High | XL | Q1 2025 |
+| #259 | AI Bill Impact Explainer | High | M | Q1 2025 |
+| #260 | "My Congress" Personalized Homepage | High | L | Q1 2025 |
+| #261 | Voting Record Comparison Tool | Medium | M | Q1 2025 |
+| #262 | Committee Hearing Tracker & Alerts | Medium | M | Q1 2025 |
+| #263 | Financial Disclosure Spotlight UI | High | L | Q1 2025 |
+| #264 | Civic Engagement Gamification | Medium | XL | Q1 2025 |
+
+### Existing Epics Moved to Q1 2025
+- Epic #249 - Unified entity following & notifications
+- Epic #250 - Congress calendar & schedule surfaces
+- Epic #255 - PTR & Financial Disclosure
 
 ---
 
